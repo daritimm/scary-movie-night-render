@@ -26,12 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //DEPLOY BUILD
 
-app.use(express.static(path.join(__dirname, 'build')));
-
-
-// app.get('/*', (req, res) => {
-//   res.sendFile(path.join(__dirname, 'build', 'index.tsx'));
-// });
+// app.use(express.static(path.join(__dirname, 'build')));
 
 
 //FUNCTIONS
