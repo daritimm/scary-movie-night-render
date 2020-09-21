@@ -173,7 +173,7 @@ app.post('/search', (req, res) => {
         };
 
         let data = JSON.parse(body);
-        console.log(data)
+        console.log("data from movie request: ", data)
 
         let titleData, yearData, imdbData, rtcData, mtcData, runtimeData;
 
@@ -191,7 +191,7 @@ app.post('/search', (req, res) => {
             imdbData = data.Ratings[0].Value
         };
 
-        rtc = data.Ratings[1] ? data.Ratings[1].Value : 'N/A';
+        rtcData = data.Ratings[1] ? data.Ratings[1].Value : 'N/A';
 
         if (!data.Ratings[2]) {
             mtcData = 'N/A'
