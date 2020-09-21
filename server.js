@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //DEPLOY BUILD
 
-// app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build')));
 
 
 //FUNCTIONS
